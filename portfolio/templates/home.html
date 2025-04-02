@@ -1,0 +1,286 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vipul kumar | web Developer</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'images/favicon.jpeg' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar Section -->
+    <nav id="navbar" class="flex s-around bg-color">
+        <div class="left-nav">
+            <h2 class="t-white">Vipul kumar</h2>
+        </div>
+        <div class="right-nav">
+            <ul class="flex">
+                <li><a href="#home" class="t-white roboto">Home <i class="fa-solid fa-house"></i></a></li>
+                <li><a href="#about" class="t-white roboto">About <i class="fa-solid fa-user"></i></a></li>
+                <li><a href="#skills" class="t-white roboto">Skills <i class="fa-solid fa-code"></i></a></li>
+                <li><a href="#projects" class="t-white roboto">Projects <i class="fas fa-project-diagram"></i></a></li>
+                <li><a href="#contact" class="t-white roboto">Contact <i class="fa-solid fa-envelope"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="flex s-around sw-80 m-auto">
+        <div class="home-left flex items-center">
+            <div class="home-content">
+                {% comment %} <h6 class="poppinss highlight-text"></h6> {% endcomment %}
+                <h1 class="t-white">I'm <span class="highlight-text">Vipul kumar</span></h1>
+                <h4 class="poppinss">beginner-level Django developer.</h4>
+                <p class="intro-text">Building Website </p>
+                <div class="cta-buttons">
+                    <a href="{% static 'pdf/django.pdf' %}" target="_blank" class="btn poppins">View Resume</a>
+                    <a href="#contact" class="btn live poppins" id="hireme">Hire Me</a>
+                </div>
+            </div>
+        </div>
+        <div class="home-right flex s-center items-center">
+            <div class="hero-image-container">
+                <img src="{% static 'images/pnge.png' %}" alt="Avanish Patidar" class="hero-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h1 class="t-center my-2 t-white f-2 section-title">About <span class="highlight-text">Me</span></h1>
+        <div class="about-container flex s-around">
+            <div class="about-left flex s-center items-center">
+                <img src="{% static 'images/dog.png' %}" alt="About Avanish" class="about-image">
+            </div>
+            <div class="about-right flex">
+                <div class="about-content">
+                    <h1 class="t-white m-b-1 poppins">Who Am I?</h1>
+                    <p class="t-white poppins">
+                        I’m Vipul, currently pursuing my 3rd year of BCA (Bachelor of Computer Applications). 
+                        I’m focused on becoming a skilled web developer and am building real-world projects to strengthen my skills
+                    </p>
+                    <p class="t-white poppins">
+                        working with technologies like Django, HTML, CSS, 
+                        and Python to bring ideas to life, creating efficient and user-friendly web applications.
+                    </p>
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Name:</span>
+                            <span class="detail-value">Vipul kumar</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Education:</span>
+                            <span class="detail-value">Bachelor of Computer Applications</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Email:</span>
+                            <span class="detail-value">vdarji556@gmail.com</span>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn" id="hireme">Get In Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <h1 class="t-center my-2 t-white f-2 section-title">My <span class="highlight-text">Skills</span></h1>
+        <div class="skills-container flex s-around">
+            <div class="skills-left flex s-center items-center">
+                <img src="{% static 'images/pro.png' %}" alt="Skills illustration" class="skills-illustration">
+            </div>
+            <div class="skills-right flex items-center">
+                <div class="skills-list">
+                    <div class="skill-item">
+                        <div class="skill-info flex s-between">
+                            <span class="skill-name t-white">django</span>
+                            <span class="skill-percent t-white">70%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress python" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info flex s-between">
+                            <span class="skill-name t-white">Python</span>
+                            <span class="skill-percent t-white">60%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress java" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info flex s-between">
+                            <span class="skill-name t-white">HTML5</span>
+                            <span class="skill-percent t-white">80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress html" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info flex s-between">
+                            <span class="skill-name t-white">CSS3</span>
+                            <span class="skill-percent t-white">60%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress css" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                    {% comment %} <div class="skill-item">
+                        <div class="skill-info flex s-between">
+                            <span class="skill-name t-white">JavaScript</span>
+                            <span class="skill-percent t-white">20%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress js" style="width: 20%;"></div>
+                        </div>
+                    </div> {% endcomment %}
+                    <div class="skill-item">
+                        <div class="skill-info flex s-between">
+                            <span class="skill-name t-white">MySQL</span>
+                            <span class="skill-percent t-white">65%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress mysql" style="width: 65%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <h1 class="t-center my-2 t-white f-2 section-title">My <span class="highlight-text">Projects</span></h1>
+        <div class="projects-container flex s-center">
+            {% for project in projects %}
+            <div class="projects-item">
+                <div class="project-icon">
+                    <i class="{{ project.icon }}"></i>
+                </div>
+                <h2 class="t-white poppins">{{ project.name }}</h2>
+                <p class="t-white poppins">
+                    {{ project.description }}
+                </p>
+                <div class="project-tech">
+                    {% for tech in project.technologies.all %}
+                    <span class="tech-tag">{{ tech.name }}</span>
+                    {% endfor %}
+                </div>
+                <div class="buttons flex s-around">
+                    <a href="{{ project.github_link }}" target="_blank" class="btn mx-1 m-top">View Code</a>
+                    <a href="{{ project.project_link }}" target="_blank" class="btn m-top live">Live Demo</a>
+                </div>
+            </div>
+            {% endfor %}
+            {% comment %} <div class="projects-item">
+                <div class="project-icon">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <h2 class="t-white poppins">Portfolio Website</h2>
+                <p class="t-white poppins">
+                    A responsive, modern portfolio showcasing my skills and projects. Built from scratch with 
+                    HTML5, CSS3, and JavaScript, this site reflects my attention to detail and design sensibility. 
+                    The clean, minimalist interface prioritizes content and user experience.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">HTML5</span>
+                    <span class="tech-tag">CSS3</span>
+                    <span class="tech-tag">JavaScript</span>
+                </div>
+                <div class="buttons flex s-around">
+                    <a href="#" target="_blank" class="btn mx-1 m-top">View Code</a>
+                    <a href="#" target="_blank" class="btn m-top live">Live Demo</a>
+                </div>
+            </div> {% endcomment %}
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h1 class="t-center my-2 t-white f-2 section-title">Get In <span class="highlight-text">Touch</span></h1>
+        <div class="contact-container flex s-around">
+            <div class="contact-info">
+                <h3 class="t-white">Contact Information</h3>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>vdarji556@gmail.com</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+91 7426884752</span>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/vipul-kumar-553a7229b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/__vicky_panwar?utm_source=qr&igsh=YjFiZHpvYnF5cm03" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="contact-form" id="contactForm">
+                {% if messages %}
+                <div class="messages">
+                    {% for message in messages %}
+                    <div class="alert {% if message.tags %}alert-{{ message.tags }}{% endif %}">
+                        {{ message }}
+                    </div>
+                    {% endfor %}
+                </div>
+                {% endif %}
+                <form method="post">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <input type="text" name="name" id="name" class="poppins" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" id="email" class="poppins" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" name="number" id="phone" class="poppins" placeholder="Phone Number">
+                    </div>
+                    <div class="form-group">
+                        <textarea name="content" id="message" cols="30" rows="5" class="poppins"
+                            placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2 class="t-white">Vipul kumar</h2>
+                <p class="t-white">Django Developer</p>
+            </div>
+            <div class="quick-links">
+                <h3 class="t-white">Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3 class="t-white">Connect With Me</h3>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/vipul-kumar-553a7229b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/__vicky_panwar?utm_source=qr&igsh=YjFiZHpvYnF5cm03" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p class="t-center t-white">&copy; 2024 vipul kumar . All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
